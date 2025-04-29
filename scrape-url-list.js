@@ -12,6 +12,8 @@
  * 3. Save the processed content as markdown files named by the hyphen-case title in the created folder.
  */
 
+require('dotenv').config();
+
 const fs = require('fs').promises;
 const path = require('path');
 const fetch = globalThis.fetch || require('node-fetch');
